@@ -1,0 +1,59 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Vintage Typewriter to post awesome stories about UI design and webdev.",
+            "price": 49.5,
+            "description": "Eligible for Shipping To Mars or somewhere else",
+            "rate": 4,
+            "image": "assets/images/products/product1.svg",
+            "banner": "assets/images/products/banner.jpg",
+            "category": "Machines",
+            "reviewCount": 100
+        },
+        {
+            "id": 2,
+            "title": "Timesaving kitten to save months on development. Playful, cute, cheap!",
+            "price": 128.99,
+            "description": "Eligible for nothing :(",
+            "rate": 3.5,
+            "image": "assets/images/products/product2.svg",
+            "banner": "assets/images/products/banner.jpg",
+            "category": "Animals",
+            "reviewCount": 50
+        },
+        {
+            "id": 3,
+            "title": "John Von Ebalkin SPRING .",
+            "price": 210,
+            "description": "1258 bids, 359 watchers $5.95 for shipping",
+            "rate": 4.5,
+            "image": "assets/images/products/product3.svg",
+            "banner": "assets/images/products/banner.jpg",
+            "category": "Clothes",
+            "reviewCount": 99
+        },
+        {
+            "id": 4,
+            "title": "Simply best item in town to shine bright with your Nine Inch Nails",
+            "price": 20.5,
+            "description": "Eligible for Shipping To Mars or somewhere else",
+            "rate": 3,
+            "image": "assets/images/products/product4.svg",
+            "banner": "assets/images/products/banner.jpg",
+            "category": "Comsmetics",
+            "reviewCount": 250
+        },
+        {
+            "id": 5,
+            "title": "KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!",
+            "price": 49.5,
+            "description": "Eligible for Shipping To Mars or somewhere else",
+            "rate": 4,
+            "image": "assets/images/products/product5.svg",
+            "banner": "assets/images/products/banner.jpg",
+            "category": "Comsmetics",
+            "reviewCount": 1000
+        }
+    ]
+}

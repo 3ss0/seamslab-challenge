@@ -1,0 +1,16 @@
+<div class="category-wrapper">
+    <div class="d-flex align-items-center justify-content-between title-wrapper">
+        <span class="title">Category</span>
+        <span class="collapse-btn" (click)="toggle()"><i class="bi" [ngClass]="{'bi-chevron-down': opened , 'bi-chevron-up': !opened}"></i></span>
+    </div>
+    <ul class="cat-list" [ngClass]="{'collapsed': !opened}">
+        <li *ngFor="let category of currentCategories; let i = index">
+            <div class="form-check">
+                <input (change)="changeHandler(i,$event)" class="form-check-input check-btn" type="checkbox" [checked]="category.selected" [id]="category.value">
+                <label class="form-check-label check-btn-label" [for]="category.value">
+                  {{category.label}}
+                </label>
+            </div>
+        </li>
+    </ul>
+</div>

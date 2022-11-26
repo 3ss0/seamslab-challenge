@@ -1,0 +1,5 @@
+<div class="search-wrapper">
+    <input type="text" class="search-input form-control" [ngClass]="{'has-value': searchValue}" [placeholder]="placeholder"
+    (input)="onSearchHandler()"  (paste)="onSearchHandler()" [(ngModel)]="searchValue">
+    <img class="clear-search" src="assets/icons/clear.svg" (click)="removeSearchValue()" *ngIf="searchValue"/>
+</div>

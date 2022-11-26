@@ -1,0 +1,27 @@
+$main-background: #ffffff;
+$main-font-family: "Inter";
+$color-gray-0: #F7F7FA;
+$color-gray-1: #19191D;
+$color-gray-5: #EDEDF0;
+$color-gray-6: #5A5B6A;
+$color-gray-50: #787885;
+
+$color-blue-30: #9DC2FF;
+$color-blue-70: #2264D1;
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+}
+
+%flex-align-justify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

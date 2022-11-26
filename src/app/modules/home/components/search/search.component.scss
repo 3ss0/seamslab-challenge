@@ -1,0 +1,25 @@
+@import "variables.scss";
+
+.search-wrapper {
+  position: relative;
+  .search-input {
+    background-color: $color-gray-5;
+    color: $color-gray-1;
+    background-image: url('assets/icons/search.svg');
+    background-repeat: no-repeat;
+    background-position: 15px;
+    background-size: 18px;
+    padding: 8px;
+    padding-left: 44px;
+    border-radius: 99px;
+    height: 48px;
+  }
+  .clear-search {
+    position: absolute;
+    right: 15px;
+    top: 17px;
+    cursor: pointer;
+  }
+}
+
+

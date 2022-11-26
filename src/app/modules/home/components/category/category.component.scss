@@ -1,0 +1,43 @@
+@import "variables.scss";
+
+.category-wrapper {
+  background-color: $color-gray-0;
+  padding: 8px 22px 17px 12px;
+  border-radius: 4px;
+}
+.title-wrapper {
+  margin-bottom: 25px;
+}
+.check-btn-label , .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $color-gray-1;
+}
+.collapse-btn {
+  cursor: pointer;
+}
+
+.cat-list {
+  list-style: none;
+  padding-left: 7px;
+  transition: display 0.2s ease-in-out;
+
+  &  li {
+    padding: 0;
+    margin-bottom: 11px;
+  }
+  
+  &.collapsed {
+    display: none;
+  }
+}
+
+.check-btn {
+  background-color: #DADADA;
+  width: 18px;
+  height: 18px;
+}
+.check-btn-label {
+  padding-left: 19px;
+}

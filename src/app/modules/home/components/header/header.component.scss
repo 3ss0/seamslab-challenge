@@ -1,0 +1,63 @@
+@import "variables.scss";
+
+header {
+  padding: 34px 16px;
+}
+.logo {
+  width: min(208px , 12vw);
+}
+.left-link {
+  margin-left: min(30px , 1vw);
+  text-decoration: none;
+  font-size: min(20px , 1.75vw);
+  line-height: 32px;
+  color: $color-gray-6;
+  vertical-align: middle;
+}
+.sign-in-btn {
+  padding: 4px 12px;
+  border-radius: 4px;
+  border: 1px solid $color-blue-30;
+  margin-right: 21px;
+}
+
+.my-cart-btn {
+  position: relative;
+  margin-right: 16px;
+  padding: 5px 12px;
+  box-shadow: 0px 2px 4px rgba(27, 78, 163, 0.2), 0px 4px 8px rgba(41, 121, 255, 0.2);
+}
+
+.right-btn {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-blue-70;
+  border-radius: 4px;
+}
+.full-search {
+  margin-top: 16px;
+}
+
+.sign-out-btn {
+  cursor: pointer;
+}
+
+.cart-count {
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+}

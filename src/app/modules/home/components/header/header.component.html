@@ -1,0 +1,24 @@
+<header>
+    <div class="row align-items-center">
+      <div class="col-7 col-lg-5">
+        <img class="logo" src="assets/images/logo.svg" />
+        <a class="left-link inter-font" routerLink="/">Sell on Shopka</a>
+        <a class="left-link inter-font" routerLink="/">Register</a>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <app-shop-search [placeholder]="'Search products'" (search)="onSearchHandler($event)"></app-shop-search>
+      </div>
+      <div class="col-5 col-lg-3 d-flex align-items-center justify-content-end">
+        <a *ngIf="!currentUser" routerLink="/auth/signin" class="sign-in-btn right-btn quick-sand-font">Sign in</a>
+        <a *ngIf="currentUser" class="sign-in-btn sign-out-btn right-btn quick-sand-font" (click)="signOut()">Sign out</a>
+        <a class="my-cart-btn right-btn quick-sand-font" routerLink="/">
+          My Cart
+          <div *ngIf="cartCount" class="cart-count">{{cartCount}}</div>
+        </a>
+        <img *ngIf="currentUser" src="assets/icons/profile.svg" />
+      </div>
+    </div>
+    <div class="d-lg-none full-search">
+      <app-shop-search [placeholder]="'Search products'" (search)="onSearchHandler($event)"></app-shop-search>
+    </div>
+</header>

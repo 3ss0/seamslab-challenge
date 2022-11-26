@@ -1,0 +1,17 @@
+<div class="shop-wrapper">
+    <div class="row">
+        <div class="col-4">
+            <app-shop-category [categories]="categoriesFilter" (selectedItems)="onSelectCategoriesHandler($event)"></app-shop-category>
+            <div style="margin-top: 19px;">
+                <app-shop-category [categories]="pricesFilter" (selectedItems)="onSelectPricesHandler($event)"></app-shop-category>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="products-wrapper">
+                <div *ngFor="let product of products | categoryFilter: selectedCategories : 'category' | priceFilter: selectedPrices : 'price'" class="d-flex">
+                    <app-shop-product [data]="product"></app-shop-product>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

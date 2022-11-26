@@ -1,0 +1,34 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6 p-0">
+            <div>
+                <img class="banner" [src]="productData?.banner" />
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="product-info" *ngIf="productData">
+                <h3 class="product-title">{{productData.title}}</h3>
+                <div class="product-stats">
+                    <span class="category">{{productData.category}}</span>
+                    <span class="rate-container"><ngb-rating [max]="5" [readonly]="true" [(rate)]="productData.rate"></ngb-rating></span>
+                    <span class="rate">{{productData.rate}} ({{productData.reviewCount}} reviews)</span>
+                </div>
+                <h5 class="description">Description:</h5>
+                <p class="description-content">{{productData.description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="add-to-cart">
+        <div class="d-flex align-items-center">
+            <img class="image" [src]="productData?.image" />
+            <div>
+                <h4 class="title">{{productData?.title}}</h4>
+                <h5 class="category">{{productData?.category}}</h5>
+            </div>
+        </div>
+        <button  class="btn btn-primary cart-btn" (click)="addToCart()">
+            Add to Cart
+        </button>
+    </div>
+    <a routerLink="/" class="back-btn"><i class="icon bi bi-arrow-left-short"></i>&nbsp;back to list</a>
+</div>
